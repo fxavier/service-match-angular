@@ -1,0 +1,59 @@
+[
+  {
+    "id": "1",
+    "serviceId": "1",
+    "bookingId": "1",
+    "userId": "2",
+    "author": {
+      "id": "2",
+      "name": "Cliente Teste",
+      "avatar": "https://i.pravatar.cc/150?img=11"
+    },
+    "rating": 5,
+    "comment": "Excelente serviço! Maria é muito profissional e deixou tudo impecável.",
+    "photos": ["https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?w=400&h=300&fit=crop"],
+    "helpful": 12,
+    "response": {
+      "text": "Obrigada pelo feedback! Foi um prazer atendê-la.",
+      "createdAt": "2024-02-11T10:00:00Z"
+    },
+    "createdAt": "2024-02-10T15:00:00Z",
+    "updatedAt": "2024-02-10T15:00:00Z"
+  },
+  {
+    "id": "2",
+    "serviceId": "1",
+    "bookingId": "1",
+    "userId": "3",
+    "author": {
+      "id": "3",
+      "name": "Ana Santos",
+      "avatar": "https://i.pravatar.cc/150?img=13"
+    },
+    "rating": 4,
+    "comment": "Muito boa a limpeza, mas chegou um pouco atrasada.",
+    "helpful": 8,
+    "createdAt": "2024-01-20T16:00:00Z",
+    "updatedAt": "2024-01-20T16:00:00Z"
+  },
+  {
+    "id": "3",
+    "serviceId": "2",
+    "bookingId": "2",
+    "userId": "2",
+    "author": {
+      "id": "2",
+      "name": "Cliente Teste",
+      "avatar": "https://i.pravatar.cc/150?img=11"
+    },
+    "rating": 5,
+    "comment": "João é muito técnico e explicou tudo muito bem. Instalação perfeita!",
+    "helpful": 15,
+    "response": {
+      "text": "Obrigado! Fico feliz que tenha ficado satisfeito.",
+      "createdAt": "2024-01-16T09:00:00Z"
+    },
+    "createdAt": "2024-01-15T18:00:00Z",
+    "updatedAt": "2024-01-15T18:00:00Z"
+  }
+]

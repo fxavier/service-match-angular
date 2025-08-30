@@ -1,0 +1,172 @@
+[
+  {
+    "id": "1",
+    "name": "Maria Silva",
+    "email": "maria.silva@example.com",
+    "phone": "(11) 98765-4321",
+    "avatar": "https://i.pravatar.cc/150?img=1",
+    "bio": "Profissional de limpeza com 10 anos de experiência. Trabalho com produtos próprios e de qualidade.",
+    "skills": ["Limpeza Residencial", "Limpeza Comercial", "Organização"],
+    "rating": 4.8,
+    "reviewsCount": 127,
+    "completedJobs": 342,
+    "responseTime": "1 hora",
+    "city": "São Paulo",
+    "neighborhood": "Vila Mariana",
+    "portfolio": [
+      {
+        "id": "p1",
+        "title": "Limpeza de Apartamento 120m²",
+        "description": "Limpeza completa incluindo vidros e área externa",
+        "images": ["https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?w=400&h=300&fit=crop"],
+        "date": "2024-01-10"
+      }
+    ],
+    "certifications": [
+      {
+        "id": "c1",
+        "name": "Curso de Limpeza Profissional",
+        "issuer": "SENAC",
+        "date": "2020-05-15",
+        "verified": true
+      }
+    ],
+    "verified": true,
+    "memberSince": "2021-03-15"
+  },
+  {
+    "id": "2",
+    "name": "João Santos",
+    "email": "joao.santos@example.com",
+    "phone": "(11) 99876-5432",
+    "avatar": "https://i.pravatar.cc/150?img=2",
+    "bio": "Técnico em refrigeração especializado em instalação e manutenção de ar condicionado.",
+    "skills": ["Instalação AC", "Manutenção AC", "Refrigeração"],
+    "rating": 4.9,
+    "reviewsCount": 89,
+    "completedJobs": 256,
+    "responseTime": "30 minutos",
+    "city": "São Paulo",
+    "neighborhood": "Moema",
+    "portfolio": [
+      {
+        "id": "p2",
+        "title": "Instalação Split 24000 BTUs",
+        "description": "Instalação completa com tubulação embutida",
+        "images": ["https://images.unsplash.com/photo-1621905252507-b35492cc74b4?w=400&h=300&fit=crop"],
+        "date": "2024-01-20"
+      }
+    ],
+    "certifications": [
+      {
+        "id": "c2",
+        "name": "Certificação em Refrigeração",
+        "issuer": "ABRARAVA",
+        "date": "2019-08-10",
+        "verified": true
+      }
+    ],
+    "verified": true,
+    "memberSince": "2020-06-10"
+  },
+  {
+    "id": "3",
+    "name": "Ana Costa",
+    "email": "ana.costa@example.com",
+    "phone": "(11) 97654-3210",
+    "avatar": "https://i.pravatar.cc/150?img=3",
+    "bio": "Manicure e pedicure com 15 anos de experiência. Especializada em nail art.",
+    "skills": ["Manicure", "Pedicure", "Nail Art", "Alongamento"],
+    "rating": 4.7,
+    "reviewsCount": 234,
+    "completedJobs": 567,
+    "responseTime": "2 horas",
+    "city": "São Paulo",
+    "neighborhood": "Pinheiros",
+    "portfolio": [
+      {
+        "id": "p3",
+        "title": "Nail Art Personalizada",
+        "description": "Design exclusivo para eventos especiais",
+        "images": ["https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=400&h=300&fit=crop"],
+        "date": "2024-02-01"
+      }
+    ],
+    "certifications": [],
+    "verified": true,
+    "memberSince": "2019-01-20"
+  },
+  {
+    "id": "4",
+    "name": "Carlos Ferreira",
+    "email": "carlos.ferreira@example.com",
+    "phone": "(11) 96543-2109",
+    "avatar": "https://i.pravatar.cc/150?img=4",
+    "bio": "Personal trainer formado em Educação Física. Especialista em emagrecimento e hipertrofia.",
+    "skills": ["Personal Training", "Nutrição Esportiva", "Avaliação Física"],
+    "rating": 4.9,
+    "reviewsCount": 156,
+    "completedJobs": 423,
+    "responseTime": "1 hora",
+    "city": "São Paulo",
+    "neighborhood": "Jardins",
+    "portfolio": [],
+    "certifications": [
+      {
+        "id": "c3",
+        "name": "CREF - Educação Física",
+        "issuer": "CREF4/SP",
+        "date": "2018-12-10",
+        "verified": true
+      }
+    ],
+    "verified": true,
+    "memberSince": "2019-09-05"
+  },
+  {
+    "id": "5",
+    "name": "Lucas Oliveira",
+    "email": "lucas.oliveira@example.com",
+    "phone": "(11) 95432-1098",
+    "avatar": "https://i.pravatar.cc/150?img=5",
+    "bio": "Técnico em informática com especialização em manutenção de computadores e notebooks.",
+    "skills": ["Formatação", "Hardware", "Redes", "Recuperação de Dados"],
+    "rating": 4.6,
+    "reviewsCount": 78,
+    "completedJobs": 189,
+    "responseTime": "45 minutos",
+    "city": "São Paulo",
+    "neighborhood": "Santana",
+    "portfolio": [],
+    "certifications": [],
+    "verified": false,
+    "memberSince": "2022-03-18"
+  },
+  {
+    "id": "6",
+    "name": "Patricia Mendes",
+    "email": "patricia.mendes@example.com",
+    "phone": "(11) 94321-0987",
+    "avatar": "https://i.pravatar.cc/150?img=6",
+    "bio": "Professora de inglês com certificação internacional. Aulas personalizadas para todos os níveis.",
+    "skills": ["Inglês", "Business English", "Preparação TOEFL", "Conversação"],
+    "rating": 4.8,
+    "reviewsCount": 98,
+    "completedJobs": 234,
+    "responseTime": "3 horas",
+    "city": "São Paulo",
+    "neighborhood": "Brooklin",
+    "portfolio": [],
+    "certifications": [
+      {
+        "id": "c4",
+        "name": "Cambridge Certificate",
+        "issuer": "Cambridge University",
+        "date": "2017-06-20",
+        "verified": true
+      }
+    ],
+    "verified": true,
+    "memberSince": "2020-11-12"
+  }
+]

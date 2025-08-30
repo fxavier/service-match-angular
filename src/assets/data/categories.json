@@ -1,0 +1,50 @@
+[
+  {
+    "id": "1",
+    "name": "Limpeza",
+    "icon": "sparkles",
+    "description": "Serviços de limpeza doméstica e comercial"
+  },
+  {
+    "id": "2",
+    "name": "Manutenção",
+    "icon": "wrench",
+    "description": "Reparações e manutenção doméstica"
+  },
+  {
+    "id": "3",
+    "name": "Beleza",
+    "icon": "sparkle",
+    "description": "Serviços de beleza e estética"
+  },
+  {
+    "id": "4",
+    "name": "Saúde",
+    "icon": "heart",
+    "description": "Cuidados de saúde e bem-estar"
+  },
+  {
+    "id": "5",
+    "name": "Tecnologia",
+    "icon": "laptop",
+    "description": "Assistência técnica e apoio informático"
+  },
+  {
+    "id": "6",
+    "name": "Educação",
+    "icon": "graduation-cap",
+    "description": "Explicações e formação"
+  },
+  {
+    "id": "7",
+    "name": "Transporte",
+    "icon": "car",
+    "description": "Transportes e mudanças"
+  },
+  {
+    "id": "8",
+    "name": "Eventos",
+    "icon": "calendar",
+    "description": "Organização e apoio a eventos"
+  }
+]

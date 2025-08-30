@@ -1,0 +1,78 @@
+{
+  "1": {
+    "id": "1",
+    "title": "Limpeza Residencial Completa",
+    "categoryId": "1",
+    "description": "Limpeza profunda de todos os cômodos da casa",
+    "longDescription": "Serviço completo de limpeza residencial incluindo todos os cômodos da casa. Utilizamos produtos de qualidade e técnicas profissionais para garantir o melhor resultado. A limpeza inclui aspiração de tapetes, lavagem de pisos, limpeza de vidros, sanitização de banheiros e cozinha.",
+    "price": 150,
+    "priceUnit": "visit",
+    "rating": 4.8,
+    "reviewsCount": 127,
+    "distanceKm": 2.5,
+    "duration": 180,
+    "images": [
+      "https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?auto=format&fit=crop&q=80&w=600&h=400",
+      "https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&q=80&w=600&h=400",
+      "https://images.unsplash.com/photo-1563453392212-326d32d2d9eb?auto=format&fit=crop&q=80&w=600&h=400",
+      "https://images.unsplash.com/photo-1584464491033-06628f3a6b7b?auto=format&fit=crop&q=80&w=600&h=400"
+    ],
+    "tags": ["limpeza", "residencial", "profunda"],
+    "providerId": "1",
+    "features": [
+      "Aspiração de tapetes e estofados",
+      "Limpeza de vidros internos",
+      "Sanitização de banheiros",
+      "Limpeza e organização da cozinha",
+      "Lavagem de pisos",
+      "Remoção de poeira dos móveis"
+    ],
+    "requirements": [
+      "Acesso fácil ao imóvel",
+      "Disponibilidade de água e energia",
+      "Materiais de limpeza fornecidos pelo prestador"
+    ],
+    "availability": ["Segunda a Sábado", "08:00 às 18:00"],
+    "cancellationPolicy": "Cancelamento gratuito até 24h antes do serviço",
+    "warranty": "Garantia de satisfação de 7 dias",
+    "createdAt": "2024-01-15T10:00:00Z",
+    "updatedAt": "2024-01-15T10:00:00Z"
+  },
+  "2": {
+    "id": "2",
+    "title": "Instalação de Ar Condicionado",
+    "categoryId": "2",
+    "description": "Instalação profissional de ar condicionado split",
+    "longDescription": "Instalação completa de ar condicionado split incluindo furação da parede, passagem de tubulação, conexões elétricas e teste de funcionamento. Garantimos instalação segura seguindo todas as normas técnicas.",
+    "price": 300,
+    "priceUnit": "project",
+    "rating": 4.9,
+    "reviewsCount": 89,
+    "distanceKm": 5.2,
+    "duration": 240,
+    "images": [
+      "https://images.unsplash.com/photo-1621905252507-b35492cc74b4?auto=format&fit=crop&q=80&w=600&h=400",
+      "https://images.unsplash.com/photo-1581291518857-4e27b48ff24e?auto=format&fit=crop&q=80&w=600&h=400",
+      "https://images.unsplash.com/photo-1558618039-c6bb04baa1b6?auto=format&fit=crop&q=80&w=600&h=400"
+    ],
+    "tags": ["ar condicionado", "instalação", "manutenção"],
+    "providerId": "2",
+    "features": [
+      "Furação da parede com equipamento profissional",
+      "Passagem de tubulação frigorígena",
+      "Conexões elétricas seguras",
+      "Teste de funcionamento completo",
+      "Limpeza do local após instalação"
+    ],
+    "requirements": [
+      "Equipamento de ar condicionado já adquirido",
+      "Ponto de energia próximo ao local de instalação",
+      "Acesso para furação externa da parede"
+    ],
+    "availability": ["Segunda a Sexta", "08:00 às 17:00"],
+    "cancellationPolicy": "Cancelamento com 48h de antecedência",
+    "warranty": "6 meses de garantia na instalação",
+    "createdAt": "2024-01-10T10:00:00Z",
+    "updatedAt": "2024-01-10T10:00:00Z"
+  }
+}

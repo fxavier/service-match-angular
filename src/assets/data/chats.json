@@ -1,0 +1,68 @@
+[
+  {
+    "threadId": "thread-1",
+    "participants": ["2", "1"],
+    "messages": [
+      {
+        "id": "msg-1",
+        "threadId": "thread-1",
+        "fromUserId": "2",
+        "toUserId": "1",
+        "text": "Olá! Gostaria de agendar uma limpeza para amanhã.",
+        "read": true,
+        "sentAt": "2024-02-08T10:30:00Z",
+        "deliveredAt": "2024-02-08T10:30:05Z",
+        "readAt": "2024-02-08T10:35:00Z"
+      },
+      {
+        "id": "msg-2",
+        "threadId": "thread-1",
+        "fromUserId": "1",
+        "toUserId": "2",
+        "text": "Oi! Claro, que horário você prefere?",
+        "read": true,
+        "sentAt": "2024-02-08T10:35:30Z",
+        "deliveredAt": "2024-02-08T10:35:35Z",
+        "readAt": "2024-02-08T10:36:00Z"
+      },
+      {
+        "id": "msg-3",
+        "threadId": "thread-1",
+        "fromUserId": "2",
+        "toUserId": "1",
+        "text": "Seria possível pela manhã, às 10h?",
+        "read": false,
+        "sentAt": "2024-02-08T10:36:15Z",
+        "deliveredAt": "2024-02-08T10:36:20Z"
+      }
+    ]
+  },
+  {
+    "threadId": "thread-2",
+    "participants": ["2", "2"],
+    "messages": [
+      {
+        "id": "msg-4",
+        "threadId": "thread-2",
+        "fromUserId": "2",
+        "toUserId": "2",
+        "text": "Boa tarde! Preciso instalar um ar condicionado.",
+        "read": true,
+        "sentAt": "2024-02-10T14:00:00Z",
+        "deliveredAt": "2024-02-10T14:00:05Z",
+        "readAt": "2024-02-10T14:05:00Z"
+      },
+      {
+        "id": "msg-5",
+        "threadId": "thread-2",
+        "fromUserId": "2",
+        "toUserId": "2",
+        "text": "Oi! Que modelo de ar condicionado você tem?",
+        "read": true,
+        "sentAt": "2024-02-10T14:05:30Z",
+        "deliveredAt": "2024-02-10T14:05:35Z",
+        "readAt": "2024-02-10T14:06:00Z"
+      }
+    ]
+  }
+]

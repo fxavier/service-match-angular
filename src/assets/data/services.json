@@ -1,0 +1,128 @@
+[
+  {
+    "id": "1",
+    "title": "Limpeza Doméstica Completa",
+    "categoryId": "1",
+    "description": "Limpeza profunda de todos os compartimentos da casa",
+    "price": 75,
+    "priceUnit": "visit",
+    "rating": 4.8,
+    "reviewsCount": 127,
+    "distanceKm": 2.5,
+    "duration": 180,
+    "images": [
+      "https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?auto=format&fit=crop&q=80&w=600&h=400",
+      "https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&q=80&w=600&h=400",
+      "https://images.unsplash.com/photo-1563453392212-326d32d2d9eb?auto=format&fit=crop&q=80&w=600&h=400"
+    ],
+    "tags": ["limpeza", "doméstica", "profunda"],
+    "providerId": "1",
+    "createdAt": "2024-01-15T10:00:00Z",
+    "updatedAt": "2024-01-15T10:00:00Z"
+  },
+  {
+    "id": "2",
+    "title": "Instalação de Ar Condicionado",
+    "categoryId": "2",
+    "description": "Instalação profissional de ar condicionado split",
+    "price": 150,
+    "priceUnit": "project",
+    "rating": 4.9,
+    "reviewsCount": 89,
+    "distanceKm": 5.2,
+    "duration": 240,
+    "images": [
+      "https://images.unsplash.com/photo-1621905252507-b35492cc74b4?auto=format&fit=crop&q=80&w=600&h=400",
+      "https://images.unsplash.com/photo-1581291518857-4e27b48ff24e?auto=format&fit=crop&q=80&w=600&h=400",
+      "https://images.unsplash.com/photo-1558618039-c6bb04baa1b6?auto=format&fit=crop&q=80&w=600&h=400"
+    ],
+    "tags": ["ar condicionado", "instalação", "manutenção"],
+    "providerId": "2",
+    "createdAt": "2024-01-10T10:00:00Z",
+    "updatedAt": "2024-01-10T10:00:00Z"
+  },
+  {
+    "id": "3",
+    "title": "Manicure e Pedicure",
+    "categoryId": "3",
+    "description": "Serviço completo de manicure e pedicure com verniz",
+    "price": 40,
+    "priceUnit": "visit",
+    "rating": 4.7,
+    "reviewsCount": 234,
+    "distanceKm": 1.8,
+    "duration": 90,
+    "images": [
+      "https://images.unsplash.com/photo-1560472354-b33ff0c44a43?auto=format&fit=crop&q=80&w=600&h=400",
+      "https://images.unsplash.com/photo-1487412912498-0447578fcca8?auto=format&fit=crop&q=80&w=600&h=400",
+      "https://images.unsplash.com/photo-1604654894610-df63bc536371?auto=format&fit=crop&q=80&w=600&h=400"
+    ],
+    "tags": ["manicure", "pedicure", "beleza", "unhas"],
+    "providerId": "3",
+    "createdAt": "2024-01-20T10:00:00Z",
+    "updatedAt": "2024-01-20T10:00:00Z"
+  },
+  {
+    "id": "4",
+    "title": "Personal Trainer",
+    "categoryId": "4",
+    "description": "Treino personalizado focado nos seus objectivos",
+    "price": 50,
+    "priceUnit": "hour",
+    "rating": 4.9,
+    "reviewsCount": 156,
+    "distanceKm": 3.2,
+    "duration": 60,
+    "images": [
+      "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&q=80&w=600&h=400",
+      "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&q=80&w=600&h=400",
+      "https://images.unsplash.com/photo-1517963879433-6ad2b056d712?auto=format&fit=crop&q=80&w=600&h=400"
+    ],
+    "tags": ["fitness", "personal", "saúde", "treino"],
+    "providerId": "4",
+    "createdAt": "2024-01-25T10:00:00Z",
+    "updatedAt": "2024-01-25T10:00:00Z"
+  },
+  {
+    "id": "5",
+    "title": "Formatação de Computador",
+    "categoryId": "5",
+    "description": "Formatação completa com cópia de segurança dos dados",
+    "price": 60,
+    "priceUnit": "project",
+    "rating": 4.6,
+    "reviewsCount": 78,
+    "distanceKm": 4.5,
+    "duration": 120,
+    "images": [
+      "https://images.unsplash.com/photo-1518709268805-4e9042af2176?auto=format&fit=crop&q=80&w=600&h=400",
+      "https://images.unsplash.com/photo-1537432376769-00f83c2f9c52?auto=format&fit=crop&q=80&w=600&h=400",
+      "https://images.unsplash.com/photo-1573164713714-d95e436ab8d6?auto=format&fit=crop&q=80&w=600&h=400"
+    ],
+    "tags": ["computador", "formatação", "tecnologia"],
+    "providerId": "5",
+    "createdAt": "2024-02-01T10:00:00Z",
+    "updatedAt": "2024-02-01T10:00:00Z"
+  },
+  {
+    "id": "6",
+    "title": "Explicações de Inglês",
+    "categoryId": "6",
+    "description": "Explicações particulares de inglês para todos os níveis",
+    "price": 35,
+    "priceUnit": "hour",
+    "rating": 4.8,
+    "reviewsCount": 98,
+    "distanceKm": 2.1,
+    "duration": 60,
+    "images": [
+      "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=600&h=400",
+      "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&q=80&w=600&h=400",
+      "https://images.unsplash.com/photo-1481627834876-b7833e8f5570?auto=format&fit=crop&q=80&w=600&h=400"
+    ],
+    "tags": ["inglês", "explicações", "idiomas", "educação"],
+    "providerId": "6",
+    "createdAt": "2024-02-05T10:00:00Z",
+    "updatedAt": "2024-02-05T10:00:00Z"
+  }
+]

@@ -1,0 +1,57 @@
+[
+  {
+    "id": "1",
+    "email": "admin@servimatch.com",
+    "password": "admin123",
+    "name": "Administrador",
+    "role": "admin",
+    "avatar": "https://i.pravatar.cc/150?img=10",
+    "phone": "(11) 99999-9999",
+    "createdAt": "2024-01-01T00:00:00Z",
+    "updatedAt": "2024-01-01T00:00:00Z"
+  },
+  {
+    "id": "2",
+    "email": "cliente@example.com",
+    "password": "cliente123",
+    "name": "Cliente Teste",
+    "role": "customer",
+    "avatar": "https://i.pravatar.cc/150?img=11",
+    "phone": "(11) 98888-8888",
+    "createdAt": "2024-01-05T00:00:00Z",
+    "updatedAt": "2024-01-05T00:00:00Z"
+  },
+  {
+    "id": "3",
+    "email": "prestador@example.com",
+    "password": "prestador123",
+    "name": "Prestador Teste",
+    "role": "provider",
+    "avatar": "https://i.pravatar.cc/150?img=12",
+    "phone": "(11) 97777-7777",
+    "createdAt": "2024-01-10T00:00:00Z",
+    "updatedAt": "2024-01-10T00:00:00Z"
+  },
+  {
+    "id": "4",
+    "email": "maria.silva@example.com",
+    "password": "maria123",
+    "name": "Maria Silva",
+    "role": "provider",
+    "avatar": "https://i.pravatar.cc/150?img=1",
+    "phone": "(11) 98765-4321",
+    "createdAt": "2021-03-15T00:00:00Z",
+    "updatedAt": "2024-01-15T00:00:00Z"
+  },
+  {
+    "id": "5",
+    "email": "joao.santos@example.com",
+    "password": "joao123",
+    "name": "João Santos",
+    "role": "provider",
+    "avatar": "https://i.pravatar.cc/150?img=2",
+    "phone": "(11) 99876-5432",
+    "createdAt": "2020-06-10T00:00:00Z",
+    "updatedAt": "2024-01-15T00:00:00Z"
+  }
+]

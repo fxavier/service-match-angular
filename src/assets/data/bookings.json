@@ -1,0 +1,75 @@
+[
+  {
+    "id": "1",
+    "userId": "2",
+    "providerId": "1",
+    "serviceId": "1",
+    "startsAt": "2024-02-10T10:00:00Z",
+    "endsAt": "2024-02-10T13:00:00Z",
+    "status": "completed",
+    "total": 150,
+    "notes": "Limpeza completa do apartamento",
+    "address": {
+      "street": "Rua das Flores",
+      "number": "123",
+      "complement": "Apto 45",
+      "neighborhood": "Vila Mariana",
+      "city": "São Paulo",
+      "state": "SP",
+      "zipCode": "04038-001"
+    },
+    "paymentMethod": {
+      "type": "credit_card",
+      "last4": "1234",
+      "brand": "visa"
+    },
+    "createdAt": "2024-02-05T10:00:00Z",
+    "updatedAt": "2024-02-10T13:00:00Z"
+  },
+  {
+    "id": "2",
+    "userId": "2",
+    "providerId": "2",
+    "serviceId": "2",
+    "startsAt": "2024-02-15T14:00:00Z",
+    "endsAt": "2024-02-15T18:00:00Z",
+    "status": "confirmed",
+    "total": 300,
+    "notes": "Instalação de ar condicionado no quarto principal",
+    "address": {
+      "street": "Av. Paulista",
+      "number": "1000",
+      "complement": "Conjunto 201",
+      "neighborhood": "Bela Vista",
+      "city": "São Paulo",
+      "state": "SP",
+      "zipCode": "01310-100"
+    },
+    "paymentMethod": {
+      "type": "pix"
+    },
+    "createdAt": "2024-02-12T15:30:00Z",
+    "updatedAt": "2024-02-12T15:30:00Z"
+  },
+  {
+    "id": "3",
+    "userId": "2",
+    "providerId": "3",
+    "serviceId": "3",
+    "startsAt": "2024-02-20T16:00:00Z",
+    "endsAt": "2024-02-20T17:30:00Z",
+    "status": "pending",
+    "total": 80,
+    "notes": "Manicure e pedicure com esmalte vermelho",
+    "address": {
+      "street": "Rua Augusta",
+      "number": "500",
+      "neighborhood": "Consolação",
+      "city": "São Paulo",
+      "state": "SP",
+      "zipCode": "01305-000"
+    },
+    "createdAt": "2024-02-18T12:00:00Z",
+    "updatedAt": "2024-02-18T12:00:00Z"
+  }
+]
