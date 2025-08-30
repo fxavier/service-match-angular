@@ -165,9 +165,13 @@ export class LoginComponent {
         this.loading.set(false);
         this.toastService.showSuccess(`Bem-vindo, ${user.name}!`);
         
-        // Redirect to return URL or home
-        const returnUrl = this.route.snapshot.queryParams['returnUrl'] || '/';
-        this.router.navigate([returnUrl]);
+        // The AuthService now handles redirection based on role
+        // Only use returnUrl if specified
+        const returnUrl = this.route.snapshot.queryParams['returnUrl'];
+        if (returnUrl) {
+          this.router.navigate([returnUrl]);
+        }
+        // Otherwise, let AuthService handle the redirection
       },
       error: (error) => {
         this.loading.set(false);

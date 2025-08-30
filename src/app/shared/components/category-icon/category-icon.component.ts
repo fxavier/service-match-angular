@@ -55,13 +55,13 @@ export class CategoryIconComponent {
   getCategoryIconUrl(): string {
     const categoryIcons: Record<string, string> = {
       'sparkles': 'https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&q=80&w=200&h=200', // Limpeza
-      'sparkle': 'https://images.unsplash.com/photo-1560750588-73207b1ef5b8?auto=format&fit=crop&q=80&w=200&h=200', // Beleza
-      'laptop': 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=200&h=200', // Tecnologia
-      'graduation-cap': 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=200&h=200', // Educação
+      'sparkle': 'https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?auto=format&fit=crop&q=80&w=200&h=200', // Beleza - homem spa/cuidados
+      'laptop': 'https://images.unsplash.com/photo-1551650975-87deedd944c3?auto=format&fit=crop&q=80&w=200&h=200', // Tecnologia - mulher com laptop
+      'graduation-cap': 'https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&q=80&w=200&h=200', // Educação - pessoas estudando
       'heart': 'https://images.unsplash.com/photo-1505751172876-fa1923c5c528?auto=format&fit=crop&q=80&w=200&h=200', // Saúde
-      'wrench': 'https://images.unsplash.com/photo-1621905252507-b35492cc74b4?auto=format&fit=crop&q=80&w=200&h=200', // Manutenção
-      'car': 'https://images.unsplash.com/photo-1542362567-b07e54358753?auto=format&fit=crop&q=80&w=200&h=200', // Transporte
-      'calendar': 'https://images.unsplash.com/photo-1511578314322-379afb476865?auto=format&fit=crop&q=80&w=200&h=200' // Eventos
+      'wrench': 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&q=80&w=200&h=200', // Manutenção - homem com ferramenta
+      'car': 'https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?auto=format&fit=crop&q=80&w=200&h=200', // Transporte - caminhão
+      'calendar': 'https://images.unsplash.com/photo-1540575467063-178a50c2df87?auto=format&fit=crop&q=80&w=200&h=200' // Eventos - pessoas reunidas
     };
 
     return categoryIcons[this.icon] || 'https://images.unsplash.com/photo-1611224923853-80b023f02d71?auto=format&fit=crop&q=80&w=200&h=200';

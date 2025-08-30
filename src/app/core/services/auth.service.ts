@@ -50,6 +50,9 @@ export class AuthService {
         
         this._authState.set(authState);
         this.saveAuthState(authState);
+        
+        // Auto-redirect based on user role
+        this.redirectBasedOnRole(user.role);
       }),
       catchError(error => {
         throw error;
@@ -82,6 +85,21 @@ export class AuthService {
     );
   }
   
+  private redirectBasedOnRole(role: string) {
+    switch (role) {
+      case 'admin':
+        this.router.navigate(['/admin']);
+        break;
+      case 'provider':
+        this.router.navigate(['/profile']);
+        break;
+      case 'customer':
+      default:
+        this.router.navigate(['/']);
+        break;
+    }
+  }
+
   logout() {
     this._authState.set({
       user: null,

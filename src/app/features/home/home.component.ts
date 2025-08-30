@@ -137,12 +137,64 @@ import { ServiceIconComponent } from '../../shared/components/service-icon/servi
           @for (service of featuredServices(); track service.id) {
             <div class="bg-white dark:bg-gray-800 rounded-xl shadow-sm hover:shadow-lg transition-shadow">
               <div class="relative">
-                <img
-                  [src]="service.images[0]"
-                  [alt]="service.title"
-                  class="w-full h-48 object-cover rounded-t-xl"
-                  (error)="onImageError($event)"
-                />
+                @if (service.id === '1' || service.id === '2' || service.id === '3' || service.id === '5' || service.id === '6') {
+                  <!-- Image Carousel for Multiple Featured Services -->
+                  <div class="relative overflow-hidden rounded-t-xl">
+                    <div 
+                      class="flex transition-transform duration-300 ease-in-out"
+                      [style.transform]="'translateX(-' + getCurrentImageIndex(service.id) * 100 + '%)'"
+                    >
+                      @for (image of service.images; track $index) {
+                        <img
+                          [src]="image"
+                          [alt]="service.title + ' - Imagem ' + ($index + 1)"
+                          class="w-full h-48 object-cover flex-shrink-0"
+                          (error)="onImageError($event)"
+                        />
+                      }
+                    </div>
+                    
+                    <!-- Navigation Dots -->
+                    <div class="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2">
+                      @for (image of service.images; track $index) {
+                        <button
+                          (click)="setCurrentImage(service.id, $index)"
+                          [class]="'w-2 h-2 rounded-full transition-colors ' + (getCurrentImageIndex(service.id) === $index ? 'bg-white' : 'bg-white/50')"
+                          [attr.aria-label]="'Ver imagem ' + ($index + 1)"
+                        ></button>
+                      }
+                    </div>
+                    
+                    <!-- Navigation Arrows -->
+                    <button
+                      (click)="previousImage(service.id)"
+                      class="absolute left-2 top-1/2 transform -translate-y-1/2 w-8 h-8 bg-black/50 hover:bg-black/70 text-white rounded-full flex items-center justify-center transition-colors"
+                      aria-label="Imagem anterior"
+                    >
+                      <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
+                      </svg>
+                    </button>
+                    <button
+                      (click)="nextImage(service.id)"
+                      class="absolute right-2 top-1/2 transform -translate-y-1/2 w-8 h-8 bg-black/50 hover:bg-black/70 text-white rounded-full flex items-center justify-center transition-colors"
+                      aria-label="Próxima imagem"
+                    >
+                      <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                      </svg>
+                    </button>
+                  </div>
+                } @else {
+                  <!-- Single Image for Other Services -->
+                  <img
+                    [src]="service.images[0]"
+                    [alt]="service.title"
+                    class="w-full h-48 object-cover rounded-t-xl"
+                    (error)="onImageError($event)"
+                  />
+                }
+                
                 <div class="absolute top-4 left-4 flex items-center gap-2">
                   <app-service-icon [serviceId]="service.id" size="sm"></app-service-icon>
                   <span class="px-2 py-1 bg-white/90 backdrop-blur-sm rounded-full text-xs font-medium text-gray-800">
@@ -287,8 +339,17 @@ export class HomeComponent implements OnInit {
   categories = computed(() => this.catalogService.categories().slice(0, 8));
   featuredServices = computed(() => this.catalogService.services().slice(0, 6));
   
+  // Image carousel state for cleaning service
+  private currentImageIndexes = new Map<string, number>();
+  
   ngOnInit() {
     // Services are loaded automatically by CatalogService
+    // Initialize carousel for multiple services
+    this.currentImageIndexes.set('1', 0); // Cleaning service
+    this.currentImageIndexes.set('2', 0); // Maintenance service
+    this.currentImageIndexes.set('3', 0); // Beauty service (manicure/pedicure)
+    this.currentImageIndexes.set('5', 0); // Computer formatting service
+    this.currentImageIndexes.set('6', 0); // English tutoring service
   }
   
   getPriceUnitLabel(unit: string): string {
@@ -298,6 +359,33 @@ export class HomeComponent implements OnInit {
       'visit': 'visita'
     };
     return labels[unit] || unit;
+  }
+
+  // Image carousel methods
+  getCurrentImageIndex(serviceId: string): number {
+    return this.currentImageIndexes.get(serviceId) || 0;
+  }
+
+  setCurrentImage(serviceId: string, index: number): void {
+    this.currentImageIndexes.set(serviceId, index);
+  }
+
+  nextImage(serviceId: string): void {
+    const service = this.featuredServices().find(s => s.id === serviceId);
+    if (service && service.images.length > 0) {
+      const currentIndex = this.getCurrentImageIndex(serviceId);
+      const nextIndex = (currentIndex + 1) % service.images.length;
+      this.setCurrentImage(serviceId, nextIndex);
+    }
+  }
+
+  previousImage(serviceId: string): void {
+    const service = this.featuredServices().find(s => s.id === serviceId);
+    if (service && service.images.length > 0) {
+      const currentIndex = this.getCurrentImageIndex(serviceId);
+      const previousIndex = currentIndex === 0 ? service.images.length - 1 : currentIndex - 1;
+      this.setCurrentImage(serviceId, previousIndex);
+    }
   }
 
   onImageError(event: Event) {
