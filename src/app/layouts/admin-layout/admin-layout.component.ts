@@ -98,13 +98,15 @@ import { ThemeService } from '../../core/services/theme.service';
         </div>
       </nav>
 
-      <!-- Sidebar -->
-      <div 
-        [class]="sidebarClasses"
-        class="fixed inset-y-0 left-0 z-30 w-64 bg-white dark:bg-gray-800 shadow-lg transform transition-transform duration-300 ease-in-out lg:translate-x-0 lg:static lg:inset-0 pt-16">
-        
-        <div class="h-full overflow-y-auto">
-          <nav class="px-4 py-6 space-y-2">
+      <!-- Main container with sidebar and content -->
+      <div class="flex h-screen pt-16">
+        <!-- Sidebar -->
+        <div 
+          [class]="sidebarClasses"
+          class="fixed inset-y-0 left-0 z-30 w-64 bg-white dark:bg-gray-800 shadow-lg transform transition-transform duration-300 ease-in-out lg:translate-x-0 lg:static lg:inset-0 pt-16 lg:pt-0">
+          
+          <div class="h-full overflow-y-auto">
+            <nav class="px-4 py-6 space-y-2">
             <!-- Dashboard -->
             <a 
               routerLink="/admin" 
@@ -223,14 +225,15 @@ import { ThemeService } from '../../core/services/theme.service';
                 Configurações
               </a>
             </div>
-          </nav>
+            </nav>
+          </div>
         </div>
-      </div>
 
-      <!-- Main Content -->
-      <div [class]="mainContentClasses" class="transition-all duration-300 ease-in-out">
-        <div class="pt-20 px-4 sm:px-6 lg:px-8 py-8">
-          <router-outlet />
+        <!-- Main Content -->
+        <div class="flex-1 overflow-y-auto bg-gray-100 dark:bg-gray-900">
+          <div class="px-4 sm:px-6 lg:px-8 py-8">
+            <router-outlet />
+          </div>
         </div>
       </div>
 
@@ -256,10 +259,6 @@ export class AdminLayoutComponent {
 
   get sidebarClasses(): string {
     return this.sidebarOpen ? 'translate-x-0' : '-translate-x-full';
-  }
-
-  get mainContentClasses(): string {
-    return 'lg:ml-64';
   }
 
   toggleSidebar() {

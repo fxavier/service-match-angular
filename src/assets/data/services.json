@@ -18,6 +18,7 @@
     ],
     "tags": ["limpeza", "doméstica", "profunda"],
     "providerId": "1",
+    "featured": true,
     "createdAt": "2024-01-15T10:00:00Z",
     "updatedAt": "2024-01-15T10:00:00Z"
   },
@@ -40,6 +41,7 @@
     ],
     "tags": ["ar condicionado", "instalação", "manutenção"],
     "providerId": "2",
+    "featured": true,
     "createdAt": "2024-01-10T10:00:00Z",
     "updatedAt": "2024-01-10T10:00:00Z"
   },
@@ -63,6 +65,7 @@
     ],
     "tags": ["manicure", "pedicure", "beleza", "unhas"],
     "providerId": "3",
+    "featured": true,
     "createdAt": "2024-01-20T10:00:00Z",
     "updatedAt": "2024-01-20T10:00:00Z"
   },

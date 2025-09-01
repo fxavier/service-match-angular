@@ -3,6 +3,7 @@ export interface Category {
   name: string;
   icon: string;
   description?: string;
+  featured?: boolean;
 }
 
 export interface ServiceItem {
@@ -21,6 +22,7 @@ export interface ServiceItem {
   tags: string[];
   providerId: string;
   provider?: Provider;
+  featured?: boolean;
   createdAt: string;
   updatedAt: string;
 }

@@ -11,7 +11,7 @@ import { Category, ServiceItem, Provider } from '../../core/models';
   standalone: true,
   imports: [CommonModule, RouterModule, FormsModule],
   template: `
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <!-- Header -->
       <div class="mb-8">
         <h1 class="text-3xl font-bold text-gray-900 dark:text-white mb-2">
@@ -100,9 +100,19 @@ import { Category, ServiceItem, Provider } from '../../core/models';
             
             <div class="space-y-3 max-h-64 overflow-y-auto">
               @for (category of categories(); track category.id) {
-                <div class="flex items-center justify-between p-3 bg-gray-50 dark:bg-gray-700 rounded-lg">
+                <div class="flex items-center justify-between p-3 bg-gray-50 dark:bg-gray-700 rounded-lg" [class.ring-2]="category.featured" [class.ring-yellow-400]="category.featured">
                   <div>
-                    <h3 class="font-medium text-gray-900 dark:text-white">{{ category.name }}</h3>
+                    <div class="flex items-center gap-2">
+                      <h3 class="font-medium text-gray-900 dark:text-white">{{ category.name }}</h3>
+                      @if (category.featured) {
+                        <span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-yellow-100 text-yellow-800 dark:bg-yellow-900/30 dark:text-yellow-300">
+                          <svg class="w-3 h-3 mr-1" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                          </svg>
+                          Destaque
+                        </span>
+                      }
+                    </div>
                     <p class="text-sm text-gray-500 dark:text-gray-400">{{ category.description }}</p>
                   </div>
                   <div class="flex space-x-2">
@@ -144,9 +154,19 @@ import { Category, ServiceItem, Provider } from '../../core/models';
             
             <div class="space-y-3 max-h-64 overflow-y-auto">
               @for (service of services().slice(0, 5); track service.id) {
-                <div class="flex items-center justify-between p-3 bg-gray-50 dark:bg-gray-700 rounded-lg">
+                <div class="flex items-center justify-between p-3 bg-gray-50 dark:bg-gray-700 rounded-lg" [class.ring-2]="service.featured" [class.ring-yellow-400]="service.featured">
                   <div class="flex-1">
-                    <h3 class="font-medium text-gray-900 dark:text-white">{{ service.title }}</h3>
+                    <div class="flex items-center gap-2">
+                      <h3 class="font-medium text-gray-900 dark:text-white">{{ service.title }}</h3>
+                      @if (service.featured) {
+                        <span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-yellow-100 text-yellow-800 dark:bg-yellow-900/30 dark:text-yellow-300">
+                          <svg class="w-3 h-3 mr-1" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                          </svg>
+                          Destaque
+                        </span>
+                      }
+                    </div>
                     <p class="text-sm text-gray-500 dark:text-gray-400">€{{ service.price }}</p>
                   </div>
                   <div class="flex space-x-2">

@@ -3,19 +3,22 @@
     "id": "1",
     "name": "Limpeza",
     "icon": "sparkles",
-    "description": "Serviços de limpeza doméstica e comercial"
+    "description": "Serviços de limpeza doméstica e comercial",
+    "featured": true
   },
   {
     "id": "2",
     "name": "Manutenção",
     "icon": "wrench",
-    "description": "Reparações e manutenção doméstica"
+    "description": "Reparações e manutenção doméstica",
+    "featured": true
   },
   {
     "id": "3",
     "name": "Beleza",
     "icon": "sparkle",
-    "description": "Serviços de beleza e estética"
+    "description": "Serviços de beleza e estética",
+    "featured": true
   },
   {
     "id": "4",
